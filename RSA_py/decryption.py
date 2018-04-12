@@ -1,17 +1,15 @@
 #!/usr/bin/env python2
 
-import os
+# import os
 from sage import all as sage_all
 from load_keys import load_key
 
 
 def decrypt_message(cipher_text, private_key):
-    key_params = load_key(private_key)
     try:
-        private_exponent, modulus = key_params or private_key
-    except TypeError:
-        print("wrong args")
-        os.sys.exit()
+        private_exponent, modulus = load_key(private_key)
+    except:
+        private_exponent, modulus = private_key
     block_num = [(int(block)) for block in cipher_text.split()]
     decrypted_num = ""
     for block in block_num:
