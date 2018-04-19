@@ -11,8 +11,14 @@
 
 arranges the 128 bits of a plaintext block as 16 bytes in 4x4 matrix
 
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
 
 #### **_AES algorithm_**:-
+
+
+![AES STRUCTURE](https://raw.githubusercontent.com/R3DDY97/crypto-py/master/AES_py/pics/aes_en_de.png)
 
 ***AES encryption involves four transformations :***
 
@@ -22,27 +28,49 @@ arranges the 128 bits of a plaintext block as 16 bytes in 4x4 matrix
 3. Add Round key
 
 
-
-<!-- ![AES STRUCTURE](https://raw.githubusercontent.com/R3DDY97/crypto-py/master/AES_py/pics/aes_structure.jpg)
- -->
+----------------------------------------------------------------------
 1. **SubBytes**
+
+*Input from plain text*
+
+![AES state](https://raw.githubusercontent.com/R3DDY97/crypto-py/master/AES_py/pics/state.jpg) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![AES sub](https://raw.githubusercontent.com/R3DDY97/crypto-py/master/AES_py/pics/state_sbox.jpg)
+
 
 ![AES SubBytes](https://raw.githubusercontent.com/R3DDY97/crypto-py/master/AES_py/pics/AES-SubBytes.svg?sanitize=true)
 
+
+![AES sbox](https://raw.githubusercontent.com/R3DDY97/crypto-py/master/AES_py/pics/aes_sbox.jpg)
+
+
+
+----------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------
 2. **ShiftRows**
 
 ![AES ShiftRows](https://raw.githubusercontent.com/R3DDY97/crypto-py/master/AES_py/pics/AES-ShiftRows.svg?sanitize=true)
+----------------------------------------------------------------------
 
 
+----------------------------------------------------------------------
 3. **MixColumns**
+
 
 ![AES ShiftRows](https://raw.githubusercontent.com/R3DDY97/crypto-py/master/AES_py/pics/AES-MixColumns.svg?sanitize=true)
 
+*Matrix used in MixColumns* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Round Constant*
 
+![AES matrix](https://raw.githubusercontent.com/R3DDY97/crypto-py/master/AES_py/pics/matrix.svg?sanitize=true)   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![AES matrix](https://raw.githubusercontent.com/R3DDY97/crypto-py/master/AES_py/pics/rcon.jpg)
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
 4. **AddRoundKey**
 
 ![AES AddRoundKey](https://raw.githubusercontent.com/R3DDY97/crypto-py/master/AES_py/pics/AES-AddRoundKey.svg?sanitize=true)
 
+----------------------------------------------------------------------
 
 
 
