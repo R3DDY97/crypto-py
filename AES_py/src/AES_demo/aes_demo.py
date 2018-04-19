@@ -8,14 +8,6 @@ from aes_constants import *
 class Rijndael(object):
 
     def __init__(self, key, block_size=16):
-
-        # create common meta-instance infrastructure
-        # self.create()
-
-        # if block_size != 16 and block_size != 24 and block_size != 32:
-        #     raise ValueError('Invalid block size: ' + str(block_size))
-        # if len(key) != 16 and len(key) != 24 and len(key) != 32:
-        #     raise ValueError('Invalid key size: ' + str(len(key)))
         self.block_size = block_size
 
         ROUNDS = 10
